@@ -1,7 +1,10 @@
 ### TVHEADEND with PVU support ###
 
-Clone this repo at your user pi root directory
-You can follow the compiling instructions or go to compiled-binaries directoriesif you are using a raspberry pi 3 under raspbian-jessie
+Clone this repo at your pi user home directory.  
+You can follow the compiling instructions or install from the compiled-binaries directory, If you are using a raspberry pi 3 with raspbian-jessie
+
+Compiling:
+
 Install OSCAM-EMU
 ```
 cd oscam
