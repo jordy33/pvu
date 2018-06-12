@@ -1,5 +1,7 @@
 ### TVHEADEND with PVU support ###
 
+Clone this repo at your user pi root directory
+You can follow the compiling instructions or go to compiled-binaries directoriesif you are using a raspberry pi 3 under raspbian-jessie
 Install OSCAM-EMU
 ```
 cd oscam
@@ -85,13 +87,13 @@ sudo apt install cmake
 sudo apt install build-essential git pkg-config libssl-dev bzip2 wget libavahi-client-dev zlib1g-dev libavcodec-dev libavutil-dev libavformat-dev libswscale-dev libavresample-dev gettext cmake libiconv-hook-dev liburiparser-dev debhelper libcurl4-gnutls-dev python-minimal
 sudo apt-get install libpcre3-dev
 ```
-Clone this repo
+Compiling TVheadend
 ```
 cd tvheadend
 ./configure
 sudo AUTOBUILD_CONFIGURE_EXTRA=--disable-libx265\ --disable-pie\ --disable-libvpx  ./Autobuild.sh
 ```
-Go to root and install package
+Go to ~ and look for package package, install with the following line:
 ```
 sudo dpkg -i tvheadend_4.1-2658~g9d85808_armhf.deb
 ```
@@ -121,6 +123,8 @@ Create muxes
 Scan Services
 Map services
 
+### Modify channel.sh (change your ip and master user and password)
 execute channel.sh to create channels
-Open with kodi
+Save print to channels.m3u
+Open channels.m3u with kodi
 
